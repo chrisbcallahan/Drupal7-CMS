@@ -18,7 +18,7 @@ This repository holds the files for a Drupal 7 based CMS.
                              scripts.zip
                              sites.zip THEN sites/all.zip & sites/default.zip
 
-# #NOTE: Make sure you unzip all files after moving the original directory to your server to prevent losing any hidden files!#
+# NOTE: Make sure you unzip all files after moving the original directory to your server to prevent losing any hidden files!
 
 - In your sites root directory change the following filenames: hidden.DS_Store -> .DS_Store
                                                                hidden.gitignore -> .gitignore
