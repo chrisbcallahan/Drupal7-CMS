@@ -1,0 +1,28 @@
+<?php
+//conection:
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = 'hfgis99';
+$dbname = 'cfr_prosaaf_new';
+$link = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+
+//grab all family ids, and the pc id and cc id associated with them
+
+$query = "SELECT family_id, pc_id, cc_id FROM family";
+
+//execute the query.
+
+$result = mysqli_query($link, $query);
+
+//Update DB
+
+while ($row = mysqli_fetch_assoc($result)) {
+	print $row['family_id'] . " " . $row['pc_id'] . " " . $row['cc_id'] . " </br>";
+
+	$sql = "INSERT INTO status_at_wave (wave_id, family_id, pc_id, cc_id, target_check_received, pc_check_received, cc_check_received) VALUES (4, " . $row['family_id'] . ", " . $row['pc_id'] . ", " . $row['cc_id'] . ", 0, 0, 0)";
+	$newwave = mysqli_query($link, $sql);
+
+	
+} 
+
+?>
