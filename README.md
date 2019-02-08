@@ -2,7 +2,7 @@
 
 This repository holds the files for a Drupal 7 based CMS.
 
-***How to install 
+***How to install*** 
 
 - Ensure you have a server the meets all Drupal 7 requirements. 
 
@@ -10,7 +10,7 @@ This repository holds the files for a Drupal 7 based CMS.
 
 - Move the unzipped Drupal7-CMS-master/ directory to the proper directory in your web server, and rename it to the name of your site. 
 
-**Unzip the following files: 
+**Unzip the following files:** 
 ```
 data.zip
 
@@ -30,9 +30,9 @@ sites/all.zip
 
 sites/default.zip
 ```
-***NOTE: Make sure you unzip all files after moving the original directory to your server to prevent losing any hidden files!
+***NOTE: Make sure you unzip all files after moving the original directory to your server to prevent losing any hidden files!***
 
-**In your sites root directory change the following filenames: 
+**In your sites root directory change the following filenames:***
 ```
 hidden.DS_Store -> .DS_Store
 
