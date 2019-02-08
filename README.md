@@ -44,7 +44,7 @@ hidden.idea -> .idea
 ```                                                               
 - Create a database and database user for your drupal site. 
 
-- Import the sqldump/saafsleep.sql.zip file into your database. *(In phpMyAdmin the file must remain zipped to work properly)
+- Import the sqldump/saafsleep.sql.zip file into your database. *(In phpMyAdmin the file must remain zipped to work properly)*
 
 - Update the sites/settings.php file by adding your database and credentials in the format specified in the comments.
 
